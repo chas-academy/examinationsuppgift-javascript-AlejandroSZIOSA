@@ -70,13 +70,13 @@ const renderLists = () => {
   expenseListEl.innerHTML = "";
   incomes.forEach((i) => {
     const li = document.createElement("li");
-    li.textContent = i.description + " - " + i.amount;
+    li.textContent = `${i.description} - ${i.amount} kr (Inkomst)`;
     incomeListEl.appendChild(li);
   });
 
   expenses.forEach((e) => {
     const li = document.createElement("li");
-    li.textContent = e.description + " - " + e.amount;
+    li.textContent = `${e.description} - ${e.amount} kr (Utgift)`;
     expenseListEl.appendChild(li);
   });
 };
