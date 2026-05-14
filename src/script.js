@@ -1,18 +1,15 @@
 const inputDescEl = document.getElementById("desc");
 const inputAmountEl = document.getElementById("amount");
-
 const incomeBtnEl = document.getElementById("incomeBtn");
 const expenseBtnEl = document.getElementById("expenseBtn");
-
 const incomeListEl = document.getElementById("incomeList");
 const expenseListEl = document.getElementById("expenseList");
-
 const totalAmountEl = document.getElementById("balance");
+
+let totalAmountSaldo = 0;
 
 let incomes = [];
 let expenses = [];
-
-let totalAmountSaldo = 0;
 
 incomeBtnEl.addEventListener("click", () => {
   const amount = inputAmountEl.value.trim();
